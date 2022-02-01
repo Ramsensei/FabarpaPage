@@ -1,0 +1,36 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img.jpg");
+    position: absolute;
+}
+.logo {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.87);
+    position: relative;
+    top: 37%;
+    left: 45%;
+}
+.footer {
+    width: 100vw;
+    height: calc(63vh - 200px);
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__info {
+    width: 100vw;
+    height: 50%;
+    position: relative;
+    background-color: #050135;
+    top: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        left: 0;
+        margin: auto;
+    }
+}
