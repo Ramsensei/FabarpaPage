@@ -41,19 +41,23 @@
     position: relative;
     background-color: #161f78;
     top: 0;
+    
 }
 
 .footer__info--item {
     width: calc((100% / 4) - 30px);
+    height: calc(100% - 30px);
     margin: 15px;
     position: relative;
     display: inline-block;
     text-align: center;
-    top: 25px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
+    background-color: #141949a6;
     font-size: 1.5rem;
 }
+
+
 
 @media screen and (max-width: 500px) {
     .logo {
