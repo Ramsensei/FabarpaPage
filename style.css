@@ -44,11 +44,12 @@
 }
 
 .footer__info--item {
-    width: 25%;
+    width: calc((100% / 4) - 30px);
+    margin: 15px;
     position: relative;
     display: inline-block;
     text-align: center;
-    top: calc((63vh - 200px)/6);
+    top: 25px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 1.5rem;
