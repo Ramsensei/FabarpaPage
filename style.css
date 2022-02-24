@@ -37,7 +37,7 @@
     bottom: 0;
 }
 
-.footer__info {
+.menu__info {
     width: 100vw;
     height: 50%;
     position: relative;
@@ -51,7 +51,7 @@
     
 }
 
-.footer__info--item {
+.menu__info--item {
     position: relative;
     display: inline;
     text-align: center;
@@ -79,6 +79,9 @@
     font-family: 'Montserrat', sans-serif;
     color: #161f78;
     font-size: 1.5rem;
+}
+.footer__icons--item--big {
+    font-size: 1.7rem;
 }
 
 @media screen and (max-width: 500px) {
