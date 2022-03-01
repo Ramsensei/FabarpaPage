@@ -75,6 +75,9 @@
     flex-flow: column nowrap;
     justify-content: center;
 }
+.block__body--text--long{
+    width: 80%;
+}
 
 .logo__img {
     margin: 8px;
