@@ -35,6 +35,15 @@
     height: 100vh;
     width: 100%;
     flex-flow: row wrap;
+
+    justify-content: space-around;
+}
+.block__body{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
 }
 
 .logo__img {
@@ -128,6 +137,37 @@
 }
 .block__heroText--p{
     font-size: 1rem;
+}
+
+
+.card{
+    width: 15rem;
+    height: 20rem;
+    position: relative;
+    display: inline-flex;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 14px;
+    
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+    overflow: hidden;
+}
+.card__img{
+    width: 100%;
+    object-fit: contain;
+}
+.card__body{
+    margin: 1.5em;
+    margin-bottom: 2em;
+}
+.card__body--h5{
+    font-size: 1.5em;
+}
+.card__body--p{
+    font-size: 1em;
 }
 
 @media screen and (max-width: 500px) {
