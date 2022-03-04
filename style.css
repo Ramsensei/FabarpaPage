@@ -37,9 +37,12 @@
     flex-flow: row wrap;
 
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    align-items: center;
 }
+.main__block--small{
+    height: 75vh;
+}
+
 .block__body{
     width: 100%;
     height: 75%;
@@ -218,6 +221,7 @@
 .card__body--p{
     font-size: 1em;
 }
+
 
 @media screen and (max-width: 600px) {
     .logo {
