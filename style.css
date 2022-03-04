@@ -54,7 +54,8 @@
 }
 
 .block__bodyTI{
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 
 .block__body--img{
@@ -68,7 +69,7 @@
     width: 40%;
     height: 70%;
     display: flex;
-    text-align: left;
+    text-align: justify;
     vertical-align: middle;
     padding: 0px 20px;
 
@@ -77,6 +78,14 @@
 }
 .block__body--text--long{
     width: 80%;
+}
+.block__body--text--h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.0rem;
+}
+.block__body--text--p{
+    line-height: 2;
 }
 
 .logo__img {
@@ -143,28 +152,33 @@
 
 .block__heroImage {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(1\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(20\).jpg");
 
     /* Set a specific height */
     height: 25%;
     width: 100%;
 
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position: top;
+    background-position-y: 20%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
     /*outline: red solid 3px;*/
 }
+
+.block__heroImage--big {
+    height: 100%;
+}
   
 /* Place text in the middle of the image */
 .block__heroText {
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    transform: translate(10%, -50%);
     color: white;
 }
 .block__heroText--h3{
@@ -205,10 +219,13 @@
     font-size: 1em;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .logo {
         right: 0;
         margin: auto;
+    }
+    .main__menu{
+        height: 150px;
     }
     .block__body--img{
         width: 80%;
@@ -225,4 +242,5 @@
         flex-flow: column nowrap;
         justify-content: space-between;
     }
+    
 }
