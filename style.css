@@ -1,7 +1,28 @@
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: var(--blue);
+}
+:root{
+    --blue: #0d47a1;
+    --light-blue: #64b5f6;
+    --dark-blue: #082e4d;
+    --red: #d32f2f;
+    --yellow: #fbc02d;
+    --green: #388e3c;
+    --grey: #757575;
+    --white: #fff;
+    --white-transparent: #ffffff80;
+    --black: #000;
+    --black-transparent: #00000080;
+    --transparent: rgba(0,0,0,0);
+}
 .main {
     display: block;
     position: absolute;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 .main__img {
     width: 100%;
@@ -13,11 +34,11 @@
 .logo {
     width: 256px;
     height: 210px;
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: var(--white-transparent);
     position: absolute;
     top: 0;
     right: 100px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px var(--black-transparent);
     border-radius: 0px 0px 5px 5px;
 }
 .main__home{
@@ -28,7 +49,7 @@
 .main__menu{
     height: 75px;
     width: 100%;
-    background-color: rgba(112, 11, 11, 0.87);
+    font-family: 'Montserrat', sans-serif;
 }
 .main__block{
     display: flex;
@@ -101,7 +122,7 @@
 .footer {
     height: 100px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--white);
     position: relative;
     display: block;
 }
@@ -110,7 +131,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #161f78;
+    background-color: var(--white);
     top: 0;
     display: flex;
 
@@ -125,7 +146,7 @@
     display: inline;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: var(--blue);
     font-size: 1.5rem;
 }
 
@@ -133,7 +154,7 @@
     width: 100%;
     height: 50%;
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--white);
     display: flex;
 
     flex-flow: row wrap;
@@ -182,7 +203,7 @@
     top: 50%;
     left: 0%;
     transform: translate(10%, -50%);
-    color: white;
+    color: var(--white);
 }
 .block__heroText--h3{
     font-size: 3rem;
@@ -197,8 +218,8 @@
     height: 20rem;
     position: relative;
     display: inline-flex;
-    background-color: #ffffff;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
+    box-shadow: 4px 4px 4px var(--black-transparent);
     border-radius: 5px;
     font-size: 14px;
     
