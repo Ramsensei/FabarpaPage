@@ -47,18 +47,16 @@
             -->
         </div>
 
-        <div class="main__block" id="desing">
-            <div class="block__body block__bodyTI">
+        <div class="main__block block__bg" id="desing">
+            <div class="block__body block__bodyTI" onclick="myFunction('desing-h3','desing-p')">
                 <div class="block__body--text">
-                    <h3 class="block__body--text--h3">Diseño Arquitectónico</h3>
-                    <p class="block__body--text--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
+                    <h3 class="block__body--text--h3" id="desing-h3">Diseño Arquitectónico</h3>
+                    <p class="block__body--text--p" id="desing-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
                 </div>
-                <img src="assets/img(13).jpg" alt="" class="block__body--img">
             </div>
         </div>
-        <div class="main__block" id="construct">
+        <div class="main__block block__bg" id="construct">
             <div class="block__body block__bodyTI">
-                <img src="assets/img(13).jpg" alt="" class="block__body--img">
                 <div class="block__body--text">
                     <h3 class="block__body--text--h3">Construcción</h3>
                     <p class="block__body--text--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
@@ -66,19 +64,17 @@
             </div>
         </div>
 
-        <div class="main__block" id="civil">
+        <div class="main__block block__bg" id="civil">
             <div class="block__body block__bodyTI">
                 <div class="block__body--text">
                     <h3 class="block__body--text--h3">Ingeniería Civil</h3>
                     <p class="block__body--text--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
                 </div>
-                <img src="assets/img(13).jpg" alt="" class="block__body--img">
             </div>
         </div>
 
-        <div class="main__block" id="remodelations">
+        <div class="main__block block__bg" id="remodelations">
             <div class="block__body block__bodyTI">
-                <img src="assets/img(13).jpg" alt="" class="block__body--img">
                 <div class="block__body--text">
                     <h3 class="block__body--text--h3">Remodelaciones</h3>
                     <p class="block__body--text--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
@@ -86,13 +82,12 @@
             </div>
         </div>
 
-        <div class="main__block" id="about">
+        <div class="main__block block__bg" id="about">
             <div class="block__body block__bodyTI">
                 <div class="block__body--text">
                     <h3 class="block__body--text--h3">Nosostros</h3>
                     <p class="block__body--text--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
                 </div>
-                <img src="assets/img(13).jpg" alt="" class="block__body--img">
             </div>
         </div>
 
@@ -151,5 +146,15 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction(idh3, idp) {
+            let e = document.getElementById(idh3);
+            e.style.animation = 'showContent 2s';
+            e.style.transform = 'translateY(0%)';
+            let p = document.getElementById(idp);
+            p.style.animation = 'showContentp 2s';
+            p.style.opacity = '1';
+        }
+    </script>
 </body>
 </html>
