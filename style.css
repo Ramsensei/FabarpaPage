@@ -4,6 +4,9 @@ a{
 a:visited{
     color: var(--blue);
 }
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --blue: #0d47a1;
     --light-blue: #64b5f6;
