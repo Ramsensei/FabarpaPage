@@ -125,11 +125,15 @@ a:visited{
     background-color: var(--blue);
     padding: 1.2rem 0;
     transform: translateY(150%);
+    animation: showContent 2s alternate infinite;
+    animation-play-state: paused;
 }
 .block__body--text--p{
     line-height: 2;
     font-weight: bold;
     opacity: 0;
+    animation: showContentp 2s alternate infinite;
+    animation-play-state: paused;
 }
 
 .logo__img {
