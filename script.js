@@ -18,11 +18,11 @@ function myFunction(idh3, idp) {
 }
 function count(num, id){
   var counter = { var: 0 };
-  TweenMax.to(counter, 3, {
+  TweenMax.to(counter, (2+20/num), {
     var: num, 
     onUpdate: function () {
       var number = Math.ceil(counter.var);
-      $('#'+id).html(number);
+      $('#'+id).html('+'+number.toString());
       if(number === counter.var){ count.kill(); }
     },
     onComplete: function(){

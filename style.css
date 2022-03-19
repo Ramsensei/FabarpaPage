@@ -254,6 +254,7 @@ html{
     font-size: 1.5rem;
     color: var(--orange);
     font-weight: 900;
+    transform: translateY(-20%);
 
 }
 
