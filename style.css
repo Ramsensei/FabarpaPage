@@ -51,7 +51,7 @@ html{
     width: 100%;
 }
 .main__menu{
-    height: 75px;
+    padding: 20px 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -258,6 +258,12 @@ html{
 
 }
 
+.block__iframe{
+    width: 80%;
+    height: 90%;
+    border: none;
+}
+
 .card{
     width: 15rem;
     height: 20rem;
@@ -312,32 +318,6 @@ html{
 
     100%{
         opacity: 1;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-    .logo {
-        right: 0;
-        margin: auto;
-    }
-    .main__menu{
-        height: 150px;
-    }
-    .block__body--img{
-        width: 80%;
-        height: 50%;
-        margin: 2rem;
-    }
-    .block__body--text{
-        width: 80%;
-    }
-    .main__block{
-        height: 200vh;
-    }
-    .block__body{
-        flex-flow: column nowrap;
-        justify-content: space-between;
     }
     
 }
