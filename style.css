@@ -99,6 +99,26 @@ html{
     position: relative;
 }
 
+#desing{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(24\).jpg");
+}
+
+#construct{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(26\).jpg");
+}
+
+#civil{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(28\).jpg");
+}
+
+#remodelations{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(29\).jpg");
+}
+
+#about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(19\).jpg");
+}
+
 .block__body--img{
     width: 40%;
     height: 70%;
@@ -293,6 +313,8 @@ html{
 .card__body--p{
     font-size: 1em;
 }
+
+
 
 @keyframes showContent {
 

@@ -16,13 +16,21 @@ function myFunction(idh3, idp) {
   },2000)
 
 }
+function value(number){
+  let text = number.toString();
+  if (text.length > 3) {
+    text = text.substring(0, text.length-3) + '.' + text.substring(text.length - 3, text.length);
+  }
+  text = "+" + text;
+  return text;
+}
 function count(num, id){
   var counter = { var: 0 };
   TweenMax.to(counter, (2+20/num), {
     var: num, 
     onUpdate: function () {
       var number = Math.ceil(counter.var);
-      $('#'+id).html('+'+number.toString());
+      $('#'+id).html(value(number));
       if(number === counter.var){ count.kill(); }
     },
     onComplete: function(){
