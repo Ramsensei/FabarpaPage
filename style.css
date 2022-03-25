@@ -36,7 +36,8 @@ html{
     object-fit: cover;
 }
 #logo {
-    width: 21ch;
+    width: 14ch;
+    margin-left: 50%;
 }
 .main__home{
     display: block;
@@ -253,7 +254,8 @@ html{
     color: var(--white);
 }
 .block__heroText--h3{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-left: 50%;
 }
 .block__heroText--p{
     font-size: 1rem;
