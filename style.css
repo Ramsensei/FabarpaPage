@@ -35,15 +35,8 @@ html{
     top: 0;
     object-fit: cover;
 }
-.logo {
-    width: 256px;
-    height: 210px;
-    background-color: var(--white-transparent);
-    position: absolute;
-    top: 0;
-    right: 100px;
-    box-shadow: 4px 4px 4px var(--black-transparent);
-    border-radius: 0px 0px 5px 5px;
+#logo {
+
 }
 .main__home{
     display: block;
@@ -116,7 +109,11 @@ html{
 }
 
 #about{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(19\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/imgf\ \(4\).jpg");
+}
+
+#valor{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/imgf\ \(1\).jpg");
 }
 
 .block__body--img{
