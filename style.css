@@ -9,6 +9,7 @@ html{
 }
 :root{
     --blue: #0d47a1;
+    --blue-transparent: #0d48a1c5;
     --light-blue: #64b5f6;
     --dark-blue: #082e4d;
     --red: #d32f2f;
@@ -37,7 +38,7 @@ html{
 }
 #logo {
     width: 14ch;
-    margin-left: 50%;
+    margin-left: 12%;
 }
 .main__home{
     display: block;
@@ -135,9 +136,15 @@ html{
     vertical-align: middle;
     padding: 0px 20px;
     color: var(--white);
+    transition: transform 0.5s;
 
     flex-flow: column nowrap;
     justify-content: center;
+}
+.block__body--text:hover{
+    transform: translateY(-5%);
+    cursor: pointer;
+    
 }
 .block__body--text--long{
     width: 80%;
@@ -146,7 +153,7 @@ html{
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2.0rem;
-    background-color: var(--blue);
+    background-color: var(--blue-transparent);
     padding: 1.2rem 0;
     transform: translateY(150%);
     animation: showContent 2s alternate infinite;
@@ -230,6 +237,7 @@ html{
     height: 25%;
     width: 100%;
 
+
     /* Position and center the image to scale nicely on all screens */
     background-position: top;
     background-position-y: 20%;
@@ -249,16 +257,17 @@ html{
     text-align: left;
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 75%;
     transform: translate(10%, -50%);
     color: var(--white);
 }
 .block__heroText--h3{
     font-size: 2rem;
-    margin-left: 50%;
+    margin-left: 6.5%;
 }
 .block__heroText--p{
     font-size: 1rem;
+    margin-left: 0%;
 }
 
 .block__body--number{
