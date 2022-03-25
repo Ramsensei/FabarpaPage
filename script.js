@@ -39,6 +39,7 @@ function count(num, id){
     ease:Circ.easeOut
   });
 }
+
 count(20, 'years');
 count(100, 'projects');
 count(50000, 'meters');
