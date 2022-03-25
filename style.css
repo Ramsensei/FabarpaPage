@@ -166,7 +166,14 @@ html{
     animation: showContentp 2s alternate infinite;
     animation-play-state: paused;
 }
-
+.block__body--text--p--two-columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.block__body--text--p--two-columns p{
+    width: 45%;
+}
 .logo__img {
     margin: 8px;
     margin-top: 50px;
