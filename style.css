@@ -11,7 +11,9 @@ html{
     --blue: #0d47a1;
     --blue-transparent: #0d48a1c5;
     --light-blue: #64b5f6;
+    --light-blue-transparent: #64b4f63f;
     --dark-blue: #082e4d;
+    --dark-blue-transparent: #082e4d56;
     --red: #d32f2f;
     --yellow: #fbc02d;
     --green: #388e3c;
@@ -167,17 +169,18 @@ html{
     animation: showContentp 2s alternate infinite;
     animation-play-state: paused;
     height: 70%;
+    padding-right: 20px;
 
     overflow: auto;
 }
 .block__body--text--p::-webkit-scrollbar{
-    display: none;
+    display: initial;
     width: 5px;
     height: 5px;
-    background-color: lightblue;
+    background-color: var(--light-blue-transparent);
 }
 .block__body--text--p::-webkit-scrollbar-thumb{
-    background-color: rgb(3, 129, 172);
+    background-color: var(--dark-blue-transparent);
 }
 .block__body--text--p--two-columns{
     display: flex;
