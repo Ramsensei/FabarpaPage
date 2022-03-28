@@ -348,7 +348,16 @@ html{
     font-size: 1em;
 }
 
-
+@media screen and (max-width: 800px) {
+    .block__heroText{
+        left: 0;
+    }
+    .block__body--number{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
 
 @keyframes showContent {
 
