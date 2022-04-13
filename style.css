@@ -122,7 +122,19 @@ html{
 #valor{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/imgf\ \(1\).jpg");
 }
-
+#about-p{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#about-p p{
+    width: 45%;
+}
+#about-p p b{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 3px 3px  5px var(--black);
+}
 .block__body--img{
     width: 40%;
     height: 70%;
@@ -245,7 +257,7 @@ html{
     display: inline;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #161f78;
+    color: var(--blue);
     font-size: 1.5rem;
 }
 .footer__icons--item--big {
