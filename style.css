@@ -272,7 +272,7 @@ html{
 }
 
 .block__heroImage--big {
-    height: 100%;
+    height: 100vh;
 }
   
 /* Place text in the middle of the image */
