@@ -7,6 +7,11 @@ a:visited{
 html{
     scroll-behavior: smooth;
 }
+hr{
+    --x-width: 80%;
+    width: var(--x-width);
+    margin-left: calc((100% - var(--x-width)) / 2);
+}
 :root{
     --blue: #0d47a1;
     --blue-transparent: #0d48a1c5;
@@ -81,8 +86,20 @@ html{
 
     /*outline: red solid 3px;*/
 }
-
-
+.menu__icons--item{
+    position: relative;
+    display: inline;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+.menu__icons--item a b{
+    color: var(--blue);
+}
+.menu__icons--item:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
 .block__bodyTI{
     justify-content: space-evenly;   
 }
@@ -122,7 +139,19 @@ html{
 #valor{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/imgf\ \(1\).jpg");
 }
-
+.block__body--text--p--two-columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.block__body--text--p--two-columns p{
+    width: 45%;
+}
+.block__body--text--p--two-columns p b{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 3px 3px  5px var(--black);
+}
 .block__body--img{
     width: 40%;
     height: 70%;
@@ -182,14 +211,14 @@ html{
 .block__body--text--p::-webkit-scrollbar-thumb{
     background-color: var(--dark-blue-transparent);
 }
-.block__body--text--p--two-columns{
+/* .block__body--text--p--two-columns{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 .block__body--text--p--two-columns p{
     width: 45%;
-}
+} */
 .logo__img {
     margin: 8px;
     margin-top: 50px;
@@ -245,7 +274,7 @@ html{
     display: inline;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #161f78;
+    color: var(--blue);
     font-size: 1.5rem;
 }
 .footer__icons--item--big {
