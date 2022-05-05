@@ -49,7 +49,7 @@ hr{
 }
 .main__home{
     display: block;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
 }
 .main__menu{
@@ -71,7 +71,7 @@ hr{
 }
 
 .main__block--smaller{
-    height: 50vh;
+    height: 30vh;
 }
 
 .block__body{
@@ -301,7 +301,7 @@ hr{
 }
 
 .block__heroImage--big {
-    height: 100vh;
+    height: 100%;
 }
   
 /* Place text in the middle of the image */
