@@ -10,21 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Page icon -->
+    <link rel="icon" type="image/png" href="assets/icon.png">
     <title>Fabarpa</title>
 </head>
 <body>
     <div class="main__menu">
         <div class="menu__info">
-            <h3 class="menu__info--item">
-                <a href="#desing">Diseño Arquitectónico</a>
-            </h3><h3 class="menu__info--item">
-                <a href="#construct">Construcción</a>
-            </h3><h3 class="menu__info--item">
-                <a href="#civil">Ingeniería Civil</a>
-            </h3><h3 class="menu__info--item">
-                <a href="#remodelations">Remodelaciones</a>
-            </h3><h3 class="menu__info--item">
-                <a href="#about">Nosostros</a>
+            <div class="menu__info--logo">
+                <a href="#"><img src="assets/logo.png" alt="Logo Fabarpa"></a>
+            </div><hr><h3 class="menu__info--item">
+                <a href="#desing" onclick="myFunction('desing-h3','desing-p')">Diseño Arquitectónico</a>
+            </h3><hr><h3 class="menu__info--item">
+                <a href="#construct" onclick="myFunction('construct-h3','construct-p')">Construcción</a>
+            </h3><hr><h3 class="menu__info--item">
+                <a href="#civil" onclick="myFunction('civil-h3','civil-p')">Ingeniería</a>
+            </h3><hr><h3 class="menu__info--item">
+                <a href="#remodelations" onclick="myFunction('remodelations-h3','remodelations-p')">Remodelación y Mantenimiento</a>
+            </h3><hr><h3 class="menu__info--item">
+                <a href="#about" onclick="myFunction('about-h3','about-p')">Nosostros</a>
             </h3>
         </div>
     </div>
@@ -32,61 +36,142 @@
         <div class="main__home">
             <div class="block__heroImage block__heroImage--big">
                 <div class="block__heroText">
-                    <h3 class="block__heroText--h3">FABARPA</h3>
-                    <p class="block__heroText--p">Página Inicial</p>
+                    <img src="assets/logo.png" id="logo">
+                    <h3 class="block__heroText--h3" id="title">FABARPA</h3>
+                    <p class="block__heroText--p">Ingeniería y Arquitectura</p>
                 </div>
             </div>
-            <!--
-            <div class="logo">
-                <img src="assets/logo.png" class="logo__img">
-                <div class="logo__borde">
-
-                </div>
-
-            </div>
-            -->
         </div>
+        <div class="main__block main__block--smaller">
+            <div class="block__body">
+                <div class="block__body--number">
+                    <h3 class="block__body--number--h3" id="years">0</h3>
+                    <p class="block__body--number--p">Años de<br>Experiencia</p>
+                </div>
+                <div class="block__body--number">
+                    <h3 class="block__body--number--h3" id="projects">0</h3>
+                    <p class="block__body--number--p">Proyectos<br>Desarrollados</p>
+                </div>
+                <div class="block__body--number">
+                    <h3 class="block__body--number--h3" id="meters">0</h3>
+                    <p class="block__body--number--p">Metros Cuadrados<br>Construidos</p>
+                </div>
+            </div>
+        </div>
+        <!-- Divisor Line -->
+        <hr>
+        <div class="main__documents">
+            <div class="menu__info">
+                
+                <div class="menu__icons--item">
+                    <img src="assets/download-solid.svg" width="30px">
+                    <a href="assets/Oferta de servicios Fabarpa.pdf" target="_BLANK"><b>Nuestros Servicios</b></a>
+                </div>
 
+                <div class="menu__icons--item">
+                    <img src="assets/download-solid.svg" width="30px">
+                    <a href="assets/Bussines profile.pdf" target="_BLANK"><b>Our Services</b></a>
+                </div>
+
+                <div class="menu__icons--item">
+                    <img src="assets/download-solid.svg" width="30px">
+                    <a href="assets/PORTAFOLIO DE CONSTRUCCIONES 2022.pdf" target="_BLANK"><b>Nuestro Portafolio</b></a>
+                </div>
+
+                <div class="menu__icons--item">
+                    <img src="assets/download-solid.svg" width="30px">
+                    <a href="assets/FABARPA-PORTFOLIO.pdf" target="_BLANK"><b>Our Portfolio</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="main__block block__bg" id="valor">
+            <div class="block__body block__bodyTI" onclick="myFunction('valor-h3','valor-p')">
+                <div class="block__body--text block__body--text--long">
+                    <h3 class="block__body--text--h3" id="valor-h3">Propuesta de Valor</h3>
+                    <p class="block__body--text--p" id="valor-p">
+                        Somos una empresa que se encarga de darle un acompañamiento único a nuestros clientes, buscamos relaciones fuertes, de confianza, transparencia y a largo plazo con ellos. En cuanto a nuestra empresa, contamos con mecanismos únicos de planificación y control en sitio, dándonos una ventaja sobre cualquier competidor de la zona. Constructora Fabarpa compite en calidad, trato al cliente, confianza, transparencia, experiencia y herramientas de soporte.
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="main__block block__bg" id="desing">
             <div class="block__body block__bodyTI" onclick="myFunction('desing-h3','desing-p')">
-                <div class="block__body--text">
+                <div class="block__body--text block__body--text--long">
                     <h3 class="block__body--text--h3" id="desing-h3">Diseño Arquitectónico</h3>
-                    <p class="block__body--text--p" id="desing-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
+                    <div class="block__body--text--p block__body--text--p--two-columns" id="desing-p">
+                        <p>
+                            <b>Residencial:</b><br>
+                            Nuestro enfoque hacia la arquitectura residencial se basa en la búsqueda de la calidad y comodidad en cada acabado del proyecto, para que su proyecto soñado pueda volverse realidad.<br>
+                            Por nuestro tiempo en el mercado y capacitación de nuestro equipo de trabajo, podemos decir que tenemos capacidad para el desarrollo de obras de cualquier índole, siendo una solución integral y completa a sus requerimientos.
+                        </p>
+                        <p>
+                            <b>Comercial:</b><br>
+                            Nuestro enfoque hacia la arquitectura comercial se basa en la rentabilidad y satisfacción del proyecto por parte de nuestros clientes, creando un diseño que se adapte a las necesidades, imagen y filosofía de este, ya sea buscar el mayor ahorro posible o buscar el lujo en el diseño (ideal para empresas, inmobiliarias e inversores en bienes raíces).
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="main__block block__bg" id="construct">
             <div class="block__body block__bodyTI" onclick="myFunction('construct-h3','construct-p')">
-                <div class="block__body--text">
+                <div class="block__body--text block__body--text--long">
                     <h3 class="block__body--text--h3" id="construct-h3">Construcción</h3>
-                    <p class="block__body--text--p" id="construct-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
+                    <p class="block__body--text--p" id="construct-p">
+                        Lideramos en construcción gracias a nuestra amplia experiencia en este campo, así como por la gran capacidad y trayectoria de nuestros profesionales encargados, buscando la excelencia en cada una de nuestras obras, gracias a nuestras herramientas únicas, diseñadas y desarrolladas a la medida por nuestra empresa para llevar a cabo as labores constructivas, ampliando aún más nuestra propuesta de valor.<br>
+                        Las áreas de especialización de nuestra empresa en labores constructivas, abarcan el proceso de la obra, gracias a nuestra permanencia continua en el mercado por más de una década, facultándonos a darle las mejores soluciones a sus requerimientos gracias a nuestro engranaje de conocimiento técnico, herramientas empresariales y permanencia ininterrumpida en el sector construcción.
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="main__block block__bg" id="civil">
             <div class="block__body block__bodyTI" onclick="myFunction('civil-h3','civil-p')">
-                <div class="block__body--text">
-                    <h3 class="block__body--text--h3" id="civil-h3">Ingeniería Civil</h3>
-                    <p class="block__body--text--p" id="civil-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
+                <div class="block__body--text block__body--text--long">
+                    <h3 class="block__body--text--h3" id="civil-h3">Ingeniería</h3>
+                    <p class="block__body--text--p" id="civil-p">
+                        Nuestro departamento más longevo es líder de la zona gracias a su caracterización por la seguridad y precisión en sus soluciones, decisiones y asesorías, siendo la mejor solución a su necesidad, tanto a nivel comercial como residencial. Nuestro departamento le da a nuestro cliente una gran variedad de <br>
+                        Servicios:<br>
+                        ⚫ Asesoría en construcciones y proyectos.<br>
+                        ⚫ Firma de planos y documentos.<br>
+                        ⚫ Diseños estructurales.<br>
+                        ⚫ Soluciones ideales a problemas en inmuebles u cualquier tipo de obra.<br>
+                        ⚫ Dirección y supervisión de obras.<br>
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="main__block block__bg" id="remodelations">
             <div class="block__body block__bodyTI" onclick="myFunction('remodelations-h3','remodelations-p')">
-                <div class="block__body--text">
-                    <h3 class="block__body--text--h3" id="remodelations-h3">Remodelaciones</h3>
-                    <p class="block__body--text--p" id="remodelations-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
+                <div class="block__body--text block__body--text--long">
+                    <h3 class="block__body--text--h3" id="remodelations-h3">Remodelacion y Mantenimiento</h3>
+                    <p class="block__body--text--p" id="remodelations-p">
+                        Este departamento se enfoca en mantener los bienes inmuebles de nuestros clientes de la mejor manera, ya que, comprendemos completamente que los edificios comerciales son la imagen de las empresas y negocios de nuestros clientes y mantener estos en condiciones óptimas tiene un gran impacto.<br>
+                        Servicios:<br>
+                        ⚫ Remodelaciones a inmuebles en mal estado.<br>
+                        ⚫ Mantenimiento preventivo a edificaciones.<br>
+                        ⚫ Mantenimiento correctivo a edificaciones.<br>
+                        ⚫ Reparaciones de gran envergadura.<br>
+                        ⚫ Ampliación o demolición del inmueble.<br>
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="main__block block__bg" id="about">
             <div class="block__body block__bodyTI" onclick="myFunction('about-h3','about-p')"> 
-                <div class="block__body--text">
+                <div class="block__body--text block__body--text--long">
                     <h3 class="block__body--text--h3" id="about-h3">Nosostros</h3>
-                    <p class="block__body--text--p" id="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis reprehenderit pariatur laboriosam voluptatem dignissimos velit ipsa totam nisi dolore vero, et officiis sapiente saepe cupiditate praesentium atque iste. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus praesentium, ut at ipsam sit nisi explicabo temporibus perferendis quo repudiandae labore ad voluptatum commodi a. Necessitatibus corporis nostrum iste rerum.</p>
+                    <div class="block__body--text--p block__body--text--p--two-columns" id="about-p">
+                        <p>
+                            <b>Nuestra Misión:</b><br>
+                            Liderar la arquitectura y construcción, desarrollando soluciones innovadoras, técnicas e integrales, logrando un valor agregado en nuestro servicio al cliente, experiencia y búsqueda de la excelencia, mejorando continuamente los procesos y fortaleciendo las capacidades de nuestro equipo de trabajo, dándole la tranquilidad plena al cliente en su proyecto.<br>
+                        </p>
+                        <p>
+                            <b>Nuestra Visión:</b><br>
+                            Ser una constructora ampliamente reconocida por la calidad de sus trabajos y su compromiso con el cliente, tanto a nivel nacional como internacional, destacando cada día en sus distintos departamentos de diversa índole, buscando satisfacer las necesidades de nuestros clientes de manera integral, antes, durante y después de las obras.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,8 +196,6 @@
                 </div> -->
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.484818319373!2d-83.70874568506399!3d9.378774485994494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa14f5c09f05af3%3A0x4c9656d51a0696bd!2sEdificio%20Fabarpa!5e0!3m2!1ses!2scr!4v1619631777866!5m2!1ses!2scr"
-                width="600"
-                height="450"
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
@@ -131,12 +214,12 @@
                 
                 <div class="footer__icons--item">
                     <i class="fas fa-envelope"></i>
-                    <b>constructora@fabarpa.com</b>
+                    <a href="mailto:constructora@fabarpa.com?Subject=INTERÉS%20EN%20LOS%20SERVICIOS%20DE%20FABARPA"><b>constructora@fabarpa.com</b></a>
                 </div>
 
                 <div class="footer__icons--item">
-                    <i class="fab fa-instagram-square footer__icons--item--big"></i>
-                    <b>@fabarpa</b>
+                    <i class="fab fa-instagram-square" width="30px"></i>
+                    <b>Fabarpa</b>
                 </div>
                 
                 <div class="footer__icons--item">
@@ -146,15 +229,8 @@
             </div>
         </div>
     </div>
-    <script>
-        function myFunction(idh3, idp) {
-            let e = document.getElementById(idh3);
-            e.style.animation = 'showContent 2s';
-            e.style.transform = 'translateY(0%)';
-            let p = document.getElementById(idp);
-            p.style.animation = 'showContentp 2s';
-            p.style.opacity = '1';
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

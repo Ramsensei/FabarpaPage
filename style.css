@@ -1,13 +1,25 @@
 a{
     text-decoration: none;
+    color: var(--blue) !important;
 }
 a:visited{
-    color: var(--blue);
+    color: var(--blue) !important;
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    --x-width: 80%;
+    width: var(--x-width);
+    margin-left: calc((100% - var(--x-width)) / 2);
 }
 :root{
     --blue: #0d47a1;
+    --blue-transparent: #0d48a1c5;
     --light-blue: #64b5f6;
+    --light-blue-transparent: #64b4f63f;
     --dark-blue: #082e4d;
+    --dark-blue-transparent: #082e4d56;
     --red: #d32f2f;
     --yellow: #fbc02d;
     --green: #388e3c;
@@ -16,6 +28,7 @@ a:visited{
     --white-transparent: #ffffff80;
     --black: #000;
     --black-transparent: #00000080;
+    --orange: #df8908;
     --transparent: rgba(0,0,0,0);
 }
 .main {
@@ -31,23 +44,25 @@ a:visited{
     top: 0;
     object-fit: cover;
 }
-.logo {
-    width: 256px;
-    height: 210px;
-    background-color: var(--white-transparent);
-    position: absolute;
-    top: 0;
-    right: 100px;
-    box-shadow: 4px 4px 4px var(--black-transparent);
-    border-radius: 0px 0px 5px 5px;
+#logo {
+    width: 14ch;
+    margin-left: 12%;
 }
 .main__home{
     display: block;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 }
 .main__menu{
-    height: 75px;
+    padding: 20px 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.main__menu img{
+    height: 1.3rem;
+}
+.main__documents{
+    padding: 20px 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -64,6 +79,10 @@ a:visited{
     height: 75vh;
 }
 
+.main__block--smaller{
+    height: 27vh;
+}
+
 .block__body{
     width: 100%;
     height: 75%;
@@ -76,7 +95,20 @@ a:visited{
 
     /*outline: red solid 3px;*/
 }
-
+.menu__icons--item{
+    position: relative;
+    display: inline;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+.menu__icons--item a b{
+    color: var(--blue);
+}
+.menu__icons--item:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
 .block__bodyTI{
     justify-content: space-evenly;   
 }
@@ -89,7 +121,46 @@ a:visited{
     background-size: cover;
     position: relative;
 }
+#title{
+    /* color: var(--blue); */
+}
 
+#desing{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(24\).jpg");
+}
+
+#construct{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(26\).jpg");
+}
+
+#civil{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(28\).jpg");
+}
+
+#remodelations{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(29\).jpg");
+}
+
+#about{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/imgf\ \(4\).jpg");
+}
+
+#valor{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/imgf\ \(1\).jpg");
+}
+.block__body--text--p--two-columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.block__body--text--p--two-columns p{
+    width: 45%;
+}
+.block__body--text--p--two-columns p b{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 3px 3px  5px var(--black);
+}
 .block__body--img{
     width: 40%;
     height: 70%;
@@ -105,9 +176,16 @@ a:visited{
     vertical-align: middle;
     padding: 0px 20px;
     color: var(--white);
+    transition: transform 0.5s;
 
     flex-flow: column nowrap;
     justify-content: center;
+
+}
+.block__body--text:hover{
+    transform: translateY(-5%);
+    cursor: pointer;
+    
 }
 .block__body--text--long{
     width: 80%;
@@ -116,16 +194,40 @@ a:visited{
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 2.0rem;
-    background-color: var(--blue);
+    background-color: var(--blue-transparent);
     padding: 1.2rem 0;
     transform: translateY(150%);
+    animation: showContent 2s alternate infinite;
+    animation-play-state: paused;
 }
 .block__body--text--p{
     line-height: 2;
     font-weight: bold;
     opacity: 0;
-}
+    animation: showContentp 2s alternate infinite;
+    animation-play-state: paused;
+    height: 70%;
+    padding-right: 20px;
 
+    overflow: auto;
+}
+.block__body--text--p::-webkit-scrollbar{
+    display: initial;
+    width: 5px;
+    height: 5px;
+    background-color: var(--light-blue-transparent);
+}
+.block__body--text--p::-webkit-scrollbar-thumb{
+    background-color: var(--dark-blue-transparent);
+}
+/* .block__body--text--p--two-columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.block__body--text--p--two-columns p{
+    width: 45%;
+} */
 .logo__img {
     margin: 8px;
     margin-top: 50px;
@@ -144,9 +246,7 @@ a:visited{
 .menu__info {
     width: 100%;
     height: 100%;
-    position: relative;
     background-color: var(--white);
-    top: 0;
     display: flex;
 
     flex-flow: row wrap;
@@ -155,13 +255,24 @@ a:visited{
     
 }
 
+.menu__info hr {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    border: none;
+    flex: 0 4 10px;
+    border-left: 1px solid #000;
+    height: 1ch;
+    width: 5px;
+}
+
 .menu__info--item {
     position: relative;
     display: inline;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: var(--blue);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .footer__icons {
@@ -181,8 +292,14 @@ a:visited{
     display: inline;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #161f78;
+    color: var(--blue);
     font-size: 1.5rem;
+}
+.footer__icons--item a{
+    color: var(--blue);
+}
+.footer__icons--item a:visited{
+    color: var(--blue);
 }
 .footer__icons--item--big {
     font-size: 1.7rem;
@@ -190,11 +307,12 @@ a:visited{
 
 .block__heroImage {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(20\).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(21\).jpg");
 
     /* Set a specific height */
     height: 25%;
     width: 100%;
+
 
     /* Position and center the image to scale nicely on all screens */
     background-position: top;
@@ -215,17 +333,43 @@ a:visited{
     text-align: left;
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 75%;
     transform: translate(10%, -50%);
     color: var(--white);
 }
 .block__heroText--h3{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-left: 6.5%;
 }
 .block__heroText--p{
     font-size: 1rem;
+    margin-left: 0%;
 }
 
+.block__body--number{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+
+}
+.block__body--number--h3{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.block__body--number--p{
+    font-size: 1.5rem;
+    color: var(--orange);
+    font-weight: 900;
+    transform: translateY(-20%);
+
+}
+
+.block__iframe{
+    width: 80%;
+    height: 90%;
+    border: none;
+}
 
 .card{
     width: 15rem;
@@ -257,6 +401,27 @@ a:visited{
     font-size: 1em;
 }
 
+@media screen and (max-width: 825px) {
+    .block__heroText{
+        left: 0;
+    }
+
+    .block__body--number{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .menu__info hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main__block--smaller{
+        height: 50vh;
+    }
+}
+
 @keyframes showContent {
 
     0%{
@@ -281,32 +446,6 @@ a:visited{
 
     100%{
         opacity: 1;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-    .logo {
-        right: 0;
-        margin: auto;
-    }
-    .main__menu{
-        height: 150px;
-    }
-    .block__body--img{
-        width: 80%;
-        height: 50%;
-        margin: 2rem;
-    }
-    .block__body--text{
-        width: 80%;
-    }
-    .main__block{
-        height: 200vh;
-    }
-    .block__body{
-        flex-flow: column nowrap;
-        justify-content: space-between;
     }
     
 }
