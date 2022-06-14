@@ -1,9 +1,9 @@
 a{
     text-decoration: none;
-    color: var(--blue) !important;
+    color: var(--white) !important;
 }
 a:visited{
-    color: var(--blue) !important;
+    color: var(--white) !important;
 }
 html{
     scroll-behavior: smooth;
@@ -24,6 +24,7 @@ hr{
     --yellow: #fbc02d;
     --green: #388e3c;
     --grey: #757575;
+    --grey-transparent: #2e2e2e93;
     --white: #fff;
     --white-transparent: #ffffff80;
     --black: #000;
@@ -34,6 +35,8 @@ hr{
 .main {
     display: block;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -50,12 +53,13 @@ hr{
 }
 .main__home{
     display: block;
-    height: 60vh;
+    height: 90vh;
     width: 100%;
 }
 .main__menu{
     padding: 20px 0;
     width: 100%;
+    background-color: var(--grey-transparent);
     font-family: 'Montserrat', sans-serif;
 }
 .main__menu img{
@@ -80,7 +84,7 @@ hr{
 }
 
 .main__block--smaller{
-    height: 27vh;
+    height: 20vh;
 }
 
 .block__body{
@@ -246,7 +250,6 @@ hr{
 .menu__info {
     width: 100%;
     height: 100%;
-    background-color: var(--white);
     display: flex;
 
     flex-flow: row wrap;
@@ -271,8 +274,11 @@ hr{
     display: inline;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: var(--blue);
+    color: var(--white);
     font-size: 1.2rem;
+}
+.menu__info--item a {
+    color: var(--white);
 }
 
 .footer__icons {
@@ -307,21 +313,31 @@ hr{
 
 .block__heroImage {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(21\).jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img\(21\).jpg"); */
 
     /* Set a specific height */
     height: 25%;
     width: 100%;
+    overflow: hidden;
 
 
     /* Position and center the image to scale nicely on all screens */
-    background-position: top;
+    /* background-position: top;
     background-position-y: 20%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     position: relative;
 
     /*outline: red solid 3px;*/
+}
+
+#video_background {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: -1000;
+    overflow: hidden;
 }
 
 .block__heroImage--big {
@@ -332,18 +348,37 @@ hr{
 .block__heroText {
     text-align: left;
     position: absolute;
+    font-size: 4rem;
     top: 50%;
-    left: 75%;
+    left: 35%;
     transform: translate(10%, -50%);
     color: var(--white);
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+    flex-basis: 30%;
 }
 .block__heroText--h3{
-    font-size: 2rem;
-    margin-left: 6.5%;
+    font-size: 4rem;
 }
 .block__heroText--p{
-    font-size: 1rem;
-    margin-left: 0%;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.block__heroText--btn{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--white);
+    background-color: var(--transparent);
+    border: 1px solid var(--white);
+    transition: color 0.5s, background-color 0.5s;
+    cursor: pointer;
+}
+.block__heroText--btn:hover{
+    background-color: var(--white);
+    color: var(--blue);
 }
 
 .block__body--number{
@@ -354,12 +389,13 @@ hr{
 }
 .block__body--number--h3{
     font-size: 4rem;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-weight: 900;
     color: var(--dark-blue);
 }
 .block__body--number--p{
     font-size: 1.5rem;
-    color: var(--orange);
+    color: var(--black);
     font-weight: 900;
     transform: translateY(-20%);
 

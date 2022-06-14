@@ -28,17 +28,21 @@
             </h3><hr><h3 class="menu__info--item">
                 <a href="#remodelations" onclick="myFunction('remodelations-h3','remodelations-p')">Remodelación y Mantenimiento</a>
             </h3><hr><h3 class="menu__info--item">
-                <a href="#about" onclick="myFunction('about-h3','about-p')">Nosostros</a>
+                <a href="#about" onclick="myFunction('about-h3','about-p')">Nosotros</a>
             </h3>
         </div>
     </div>
     <div class="main">
         <div class="main__home">
             <div class="block__heroImage block__heroImage--big">
+                <video id="video_background" preload="auto" muted autoplay loop>
+                    <source src="/assets/VideoSitioWeb.mp4" type="video/mp4" />
+                </video>
                 <div class="block__heroText">
-                    <img src="assets/logo.png" id="logo">
+                    <!-- <img src="assets/logo.png" id="logo"> -->
                     <h3 class="block__heroText--h3" id="title">FABARPA</h3>
                     <p class="block__heroText--p">Ingeniería y Arquitectura</p>
+                    <button class="block__heroText--btn">CONOCE MÁS</button>
                 </div>
             </div>
         </div>
@@ -161,7 +165,7 @@
         <div class="main__block block__bg" id="about">
             <div class="block__body block__bodyTI" onclick="myFunction('about-h3','about-p')"> 
                 <div class="block__body--text block__body--text--long">
-                    <h3 class="block__body--text--h3" id="about-h3">Nosostros</h3>
+                    <h3 class="block__body--text--h3" id="about-h3">Nosotros</h3>
                     <div class="block__body--text--p block__body--text--p--two-columns" id="about-p">
                         <p>
                             <b>Nuestra Misión:</b><br>
